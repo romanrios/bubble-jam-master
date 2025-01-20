@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
+const API_URL = "https://tu-proyecto.vercel.app/posts";
+
 const Posts = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
     axios
-      .get("https://your-vercel-app.vercel.app/posts") // Actualiza esta URL
+      .get(API_URL) // Actualiza esta URL
       .then((response) => setPosts(response.data))
       .catch((error) => console.error("Error fetching data: ", error));
   }, []);
