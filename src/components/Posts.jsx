@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = "https://tu-proyecto.vercel.app/posts";
+const API_URL = "https://json-server-test-xi.vercel.app/posts";
 
 const Posts = () => {
   const [posts, setPosts] = useState([]);
