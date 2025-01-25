@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1737791132,
+	"version": 1737834971,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -17,6 +17,14 @@
 		"images/ggj_logo-sheet0.png",
 		"images/roman_rios-sheet0.png",
 		"images/3f198fc64633e31030aa69ba3d332ec-sheet0.png",
+		"images/sprite2-sheet0.png",
+		"images/player-sheet0.png",
+		"images/player-sheet1.png",
+		"images/player-sheet2.png",
+		"images/title_logo-sheet0.png",
+		"images/title_logo2-sheet0.png",
+		"images/circle-sheet0.png",
+		"images/tiledbackground2.png",
 		"media/a5.m4a",
 		"media/a5.ogg",
 		"media/c6.m4a",
@@ -39,6 +47,8 @@
 		"loading-logo.png",
 		"audionugget-webfont.woff",
 		"audionugget-webfont.woff2",
+		"orbitron-variablefont_wght-webfont.woff",
+		"orbitron-variablefont_wght-webfont.woff2",
 		"penumbra.png"
 	]
 }
