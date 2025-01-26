@@ -1,0 +1,475 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E_Level_Base</name>
+    <events>
+        <variable constant="0" name="bubbleCount" sid="767720705252304" static="0" type="number">0</variable>
+        <variable constant="0" name="bubbleTotal" sid="861140079993100" static="0" type="number">0</variable>
+        <variable constant="0" name="rotationSpeed" sid="958221271250842" static="0" type="number">180</variable>
+        <comment>Start Config &amp; Score</comment>
+        <event-block sid="862407740258115">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="707112950567597" type="System" />
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="182077280248592" type="System">
+                    <param id="0" name="Variable">bubbleCount</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="601360096639137" type="System">
+                    <param id="0" name="Variable">bubbleTotal</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="803962687839054">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="421812641101921" type="System">
+                            <param id="0" name="Object">bubble</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Add to" sid="925159750433072" type="System">
+                            <param id="0" name="Variable">bubbleTotal</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="261149692173116">
+                    <conditions />
+                    <actions>
+                        <action id="0" name="Call function" sid="183100950850442" type="Function">
+                            <param id="0" name="Name">&quot;setScore&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="722079842686102">
+                    <conditions />
+                    <actions>
+                        <action id="2" name="Set font face" sid="530966803725787" type="scoretxt">
+                            <param id="0" name="Font face">FONT_TEXT</param>
+                            <param id="1" name="Style">0</param>
+                        </action>
+                        <action id="2" name="Set font face" sid="319367040231133" type="BgText">
+                            <param id="0" name="Font face">FONT_DISPLAY</param>
+                            <param id="1" name="Style">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="587459339970065" type="BgText">
+                            <param id="0" name="Text">LayoutName</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="866163269846336">
+                    <conditions>
+                        <condition id="5" inverted="1" name="Is tag playing" sid="423898722840337" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Play" sid="779566819327698" type="Audio">
+                            <param id="0" name="Audio file">ggj2025</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">10</param>
+                            <param id="1" name="Tag (optional)">&quot;music&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="413101987018660">
+                    <conditions />
+                    <actions>
+                        <action id="-3" name="Create object" sid="812105016712533" type="System">
+                            <param id="0" name="Object to create">Estela</param>
+                            <param id="1" name="Layer">1</param>
+                            <param id="2" name="X">-9999</param>
+                            <param id="3" name="Y">-9999</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="648837664918140">
+                    <conditions />
+                    <actions>
+                        <action id="-16" name="Wait" sid="460708810448815" type="System">
+                            <param id="0" name="Seconds">1.0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="582939482943667">
+            <conditions>
+                <condition id="0" name="On function" sid="713592657352961" type="Function">
+                    <param id="0" name="Name">&quot;setScore&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="809036309771961" type="scoretxt">
+                    <param id="0" name="Text">bubbleCount&amp;&quot; / &quot;&amp;bubbleTotal</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Posicionamiento Player y Estela</comment>
+        <event-block sid="327902062047305">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="722789113622914" type="System" />
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="614381718433280">
+                    <conditions>
+                        <condition id="-14" name="Pick by unique ID" sid="661660916771551" type="bubble">
+                            <param id="0" name="Unique ID">Player.bubble_UID</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="402224749652216" type="Player">
+                            <param id="0" name="Instance variable">bubble_UID</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="798819829625526" type="Player">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;default&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="213671919727903" type="Player">
+                            <param id="0" name="Object">bubble</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="881072809609575">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="959403051784891" type="Player">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;moving&quot;</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="814128404656986" type="Player">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;tweening&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set position to another object" sid="800668840015526" type="Estela">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Image point (optional)">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="659702563533707">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="842993353773211" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="154811201553973" type="Estela">
+                            <param id="0" name="X">-9999</param>
+                            <param id="1" name="Y">-9999</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <comment>Enter Bubble</comment>
+        <event-block sid="779588368804830">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="296934833497436" type="Player">
+                    <param id="0" name="Object">bubble</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="888158935341483" type="Player">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;moving&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="3" name="Set target" sid="172598035680223" type="Player">
+                    <param id="0" name="Target is">0</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">bubble.X</param>
+                </action>
+                <action behavior="LiteTween" id="3" name="Set target" sid="397491398819322" type="Player">
+                    <param id="0" name="Target is">1</param>
+                    <param id="1" name="Relativity">0</param>
+                    <param id="2" name="Value">bubble.Y</param>
+                </action>
+                <action behavior="LiteTween" id="10" name="Start" sid="816140520901218" type="Player">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="680670384310019" type="Player">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">&quot;tweening&quot;</param>
+                </action>
+                <action id="-10" name="Set value" sid="851256293300936" type="Player">
+                    <param id="0" name="Instance variable">bubble_UID</param>
+                    <param id="1" name="Value">bubble.UID</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="139669889208974" type="Player">
+                    <param id="0" name="Speed">850</param>
+                </action>
+                <action id="0" name="Call function" sid="284507793471016" type="Function">
+                    <param id="0" name="Name">&quot;playRandomSoundBubble&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="886718076082212">
+            <conditions>
+                <condition behavior="LiteTween" id="4" name="On tween end" sid="218219105629559" type="Player" />
+                <condition id="-7" name="Compare instance variable" sid="634716274289333" type="Player">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;tweening&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Rotate" id="0" name="Set speed" sid="548617923907820" type="Player">
+                    <param id="0" name="Speed">rotationSpeed</param>
+                </action>
+                <action id="-10" name="Set value" sid="459786768868675" type="Player">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">&quot;default&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="267496536353128" type="Player">
+                    <param id="0" name="Animation">&quot;Default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>Leave Bubble</comment>
+        <event-block sid="300411046908034">
+            <conditions>
+                <condition id="3" name="On touched object" sid="178776620340552" type="Touch">
+                    <param id="0" name="Object">TouchArea</param>
+                </condition>
+                <condition id="-14" name="Pick by unique ID" sid="601865938266844" type="bubble">
+                    <param id="0" name="Unique ID">Player.bubble_UID</param>
+                </condition>
+                <condition id="-7" name="Compare instance variable" sid="828888548756104" type="Player">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;default&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Set value" sid="439093725163153" type="Player">
+                    <param id="0" name="Instance variable">bubble_UID</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="997172384566043" type="Player">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="3" name="Set angle of motion" sid="871634645441327" type="Player">
+                    <param id="0" name="Angle">Player.Angle</param>
+                </action>
+                <action id="-3" name="Create object" sid="670431211289089" type="System">
+                    <param id="0" name="Object to create">Particles</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="X">bubble.X</param>
+                    <param id="3" name="Y">bubble.Y</param>
+                </action>
+                <action id="-9" name="Destroy" sid="350911148428469" type="bubble" />
+                <action behavior="Rotate" id="0" name="Set speed" sid="237993835503397" type="Player">
+                    <param id="0" name="Speed">500</param>
+                </action>
+                <action id="-10" name="Set value" sid="990569466570144" type="Player">
+                    <param id="0" name="Instance variable">state</param>
+                    <param id="1" name="Value">&quot;moving&quot;</param>
+                </action>
+                <action id="4" name="Set animation" sid="362820600869860" type="Player">
+                    <param id="0" name="Animation">&quot;Moving&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action id="0" name="Call function" sid="510291968953762" type="Function">
+                    <param id="0" name="Name">&quot;playRandomSoundBubble&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="277562313282978">
+                    <conditions />
+                    <actions>
+                        <action id="-10" name="Add to" sid="213124625937947" type="System">
+                            <param id="0" name="Variable">bubbleCount</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="331319636055100" type="Function">
+                            <param id="0" name="Name">&quot;setScore&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="270846751800594" title="Lose">
+            <sub-events>
+                <event-block sid="377569214563103">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="955515656909677" type="Player">
+                            <param id="0" name="Object">Enemy</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="604908585624429" type="System">
+                            <param id="0" name="Object to create">Particles2</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">Player.X</param>
+                            <param id="3" name="Y">Player.Y</param>
+                        </action>
+                        <action id="6" name="Stop" sid="787559597209249" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="141184281461818" type="Audio">
+                            <param id="0" name="Audio file">lose</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-4</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="147395280964836" type="Player" />
+                        <action id="0" name="Set text" sid="642998701357402" type="BgText">
+                            <param id="0" name="Text">&quot;You Lose&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="510763585389134" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-26" name="Restart layout" sid="367662864980755" type="System" />
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="266958478456283" title="Win">
+            <sub-events>
+                <event-block sid="997314545426954">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="737093610340895" type="System">
+                            <param id="0" name="Variable">bubbleCount</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">bubbleTotal-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="181520012133749" type="portal">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="860510675774416">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="465011418789570" type="Player">
+                            <param id="0" name="Object">portal</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="365224268602960" type="System">
+                            <param id="0" name="Variable">bubbleCount</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">bubbleTotal</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="407984154940443" type="Player">
+                            <param id="0" name="Target is">0</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">portal.X</param>
+                        </action>
+                        <action behavior="LiteTween" id="3" name="Set target" sid="160995190034605" type="Player">
+                            <param id="0" name="Target is">1</param>
+                            <param id="1" name="Relativity">0</param>
+                            <param id="2" name="Value">portal.Y</param>
+                        </action>
+                        <action behavior="LiteTween" id="10" name="Start" sid="230654875897398" type="Player">
+                            <param id="0" name="Start Mode">0</param>
+                            <param id="1" name="Force use current">0</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="395454433424921" type="Player">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Value">&quot;tweening_win&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="548335905832359">
+                    <conditions>
+                        <condition behavior="LiteTween" id="4" name="On tween end" sid="809287040164975" type="Player" />
+                        <condition id="-7" name="Compare instance variable" sid="932757451197645" type="Player">
+                            <param id="0" name="Instance variable">state</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;tweening_win&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="392467379783823" type="System">
+                            <param id="0" name="Object to create">Particles2</param>
+                            <param id="1" name="Layer">2</param>
+                            <param id="2" name="X">Player.X</param>
+                            <param id="3" name="Y">Player.Y</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="327086718604177" type="Player" />
+                        <action id="0" name="Set text" sid="461920988922513" type="BgText">
+                            <param id="0" name="Text">&quot;You Win&quot;</param>
+                        </action>
+                        <action id="6" name="Stop" sid="889827566399218" type="Audio">
+                            <param id="0" name="Tag">&quot;music&quot;</param>
+                        </action>
+                        <action id="0" name="Play" sid="806883602169502" type="Audio">
+                            <param id="0" name="Audio file">win</param>
+                            <param id="2" name="Loop">0</param>
+                            <param id="3" name="Volume">-4</param>
+                            <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="883976177313403" type="System">
+                            <param id="0" name="Seconds">2</param>
+                        </action>
+                        <action id="-43" name="Go to next/previous layout" sid="591842775516283" type="System">
+                            <param id="0" name="Which">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="988968131093998">
+            <conditions>
+                <condition id="0" name="On function" sid="332919271462434" type="Function">
+                    <param id="0" name="Name">&quot;playRandomSoundWall&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="155808529941410" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;d5&quot;,&quot;f5&quot;,&quot;a5&quot;,&quot;c6&quot;,&quot;d6&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-4</param>
+                    <param id="2" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="558074005455052">
+            <conditions>
+                <condition id="0" name="On function" sid="897289623669124" type="Function">
+                    <param id="0" name="Name">&quot;playRandomSoundBubble&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="7" name="Play (by name)" sid="950944130090837" type="Audio">
+                    <param id="0" name="Folder">0</param>
+                    <param id="1" name="Audio file name">choose(&quot;bub01&quot;,&quot;bub02&quot;)</param>
+                    <param id="3" name="Loop">0</param>
+                    <param id="4" name="Volume">-6</param>
+                    <param id="2" name="Tag (optional)">&quot;sfx&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="331822992413136">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="656846837910889" type="Player">
+                    <param id="0" name="Object">9patch</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="103943957995236" type="Function">
+                    <param id="0" name="Name">&quot;playRandomSoundWall&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

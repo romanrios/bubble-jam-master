@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>E_Intro</name>
+    <events>
+        <variable constant="1" name="FONT_DISPLAY" sid="734411053988253" static="0" type="text">cytoneregular</variable>
+        <variable constant="1" name="FONT_TEXT" sid="388428175582690" static="0" type="text">orbitronregular</variable>
+        <event-block sid="294007580034692">
+            <conditions>
+                <condition behavior="Fade" id="0" name="On fade-out finished" sid="303091176874997" type="roman_rios" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="450811567280267" type="System">
+                    <param id="0" name="Layout">Title</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="506240504877221">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="321914845214593" type="System" />
+            </conditions>
+            <actions>
+                <action id="17" name="Execute Javascript" sid="949844622253060" type="Browser">
+                    <param id="0" name="Javascript">&quot;const style = document.createElement(&apos;style&apos;);&#x0D;&#x0A;style.type = &apos;text/css&apos;;&#x0D;&#x0A;style.innerHTML = `&#x0D;&#x0A;@font-face {&#x0D;&#x0A;    font-family: &apos;cytoneregular&apos;;&#x0D;&#x0A;    src: url(&apos;cytone-regular-webfont.woff2&apos;) format(&apos;woff2&apos;),&#x0D;&#x0A;         url(&apos;cytone-regular-webfont.woff&apos;) format(&apos;woff&apos;);&#x0D;&#x0A;    font-weight: normal;&#x0D;&#x0A;    font-style: normal;&#x0D;&#x0A;}&#x0D;&#x0A;&#x0D;&#x0A;@font-face {&#x0D;&#x0A;    font-family: &apos;orbitronregular&apos;;&#x0D;&#x0A;    src: url(&apos;orbitron-variablefont_wght-webfont.woff2&apos;) format(&apos;woff2&apos;),&#x0D;&#x0A;         url(&apos;orbitron-variablefont_wght-webfont.woff&apos;) format(&apos;woff&apos;);&#x0D;&#x0A;    font-weight: normal;&#x0D;&#x0A;    font-style: normal;&#x0D;&#x0A;&#x0D;&#x0A;}&#x0D;&#x0A;&#x0D;&#x0A;`;&#x0D;&#x0A;document.head.appendChild(style);&quot;</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="165755573372296">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="665648751810382" type="Text">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fontDisplay&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set font face" sid="627709627253047" type="Text">
+                            <param id="0" name="Font face">FONT_DISPLAY</param>
+                            <param id="1" name="Style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="381419732527725">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="164690590662564" type="Text">
+                            <param id="0" name="Instance variable">id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;fontText&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set font face" sid="817182466698349" type="Text">
+                            <param id="0" name="Font face">FONT_TEXT</param>
+                            <param id="1" name="Style">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+    </events>
+</c2eventsheet>
