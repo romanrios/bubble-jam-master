@@ -23,6 +23,30 @@
                     <param id="1" name="Style">0</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="297579318702305">
+                    <conditions>
+                        <condition id="-20" name="Is on mobile device" sid="608429589889220" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-27" name="Set effect enabled" sid="506310418774522" type="3f198fc64633e31030aa69ba3d332ec">
+                            <param id="0" name="Mode">0</param>
+                            <param id="1" name="Effect">&quot;Water&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="272421678499978">
+            <conditions>
+                <condition behavior="LiteTween" id="4" name="On tween end" sid="236186824462879" type="Cuadricula" />
+            </conditions>
+            <actions>
+                <action behavior="LiteTween" id="10" name="Start" sid="767993037899384" type="Cuadricula">
+                    <param id="0" name="Start Mode">0</param>
+                    <param id="1" name="Force use current">0</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>

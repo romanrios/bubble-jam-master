@@ -381,7 +381,7 @@
                             <point x="0.229167" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Desktop\GGJ2025\recursos\cube_02.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Desktop\GGJ2025\recursos\cube_03.png">
                         <collision-poly>
                             <point x="0.367647" y="0.269608" />
                             <point x="0.614443" y="0.269608" />
@@ -391,7 +391,7 @@
                             <point x="0.229167" y="0.5" />
                         </collision-poly>
                     </frame>
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Desktop\GGJ2025\recursos\cube_03.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Desktop\GGJ2025\recursos\cube_02.png">
                         <collision-poly>
                             <point x="0.367647" y="0.269608" />
                             <point x="0.614443" y="0.269608" />

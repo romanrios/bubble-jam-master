@@ -10,14 +10,14 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
+        <layout active="1" order="0">Object Repository</layout>
         <layout order="2">Intro</layout>
         <layout order="4">Title</layout>
-        <layout order="0">Object Repository</layout>
         <layout order="6">06</layout>
         <layout order="7">01</layout>
         <layout order="8">04</layout>
         <layout order="9">03</layout>
-        <layout active="1" order="10">End</layout>
+        <layout order="10">End</layout>
         <event-sheet order="1">E_Intro</event-sheet>
         <event-sheet order="3">E_Title</event-sheet>
         <event-sheet order="5">E_Level_Base</event-sheet>

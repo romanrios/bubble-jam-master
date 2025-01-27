@@ -413,7 +413,7 @@
                         <action id="0" name="Play" sid="806883602169502" type="Audio">
                             <param id="0" name="Audio file">win</param>
                             <param id="2" name="Loop">0</param>
-                            <param id="3" name="Volume">-4</param>
+                            <param id="3" name="Volume">-7</param>
                             <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                         </action>
                         <action id="-16" name="Wait" sid="883976177313403" type="System">
@@ -437,7 +437,7 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;d5&quot;,&quot;f5&quot;,&quot;a5&quot;,&quot;c6&quot;,&quot;d6&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-4</param>
+                    <param id="4" name="Volume">-5</param>
                     <param id="2" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>
