@@ -209,11 +209,30 @@
                 <action behavior="Bullet" id="0" name="Set speed" sid="139669889208974" type="Player">
                     <param id="0" name="Speed">850</param>
                 </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="970554335833769" type="Player">
+                    <param id="0" name="State">0</param>
+                </action>
                 <action id="0" name="Call function" sid="284507793471016" type="Function">
                     <param id="0" name="Name">&quot;playRandomSoundBubble&quot;</param>
                     <param id="1" name="Parameter {n}"></param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="334280971773701">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="705430595303501" type="System">
+                            <param id="0" name="Variable">bubbleCount</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">bubbleTotal-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Set opacity" sid="710510385286507" type="portal">
+                            <param id="0" name="Opacity">100</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="886718076082212">
             <conditions>
@@ -341,20 +360,6 @@
         </event-group>
         <event-group description="" sid="266958478456283" title="Win">
             <sub-events>
-                <event-block sid="997314545426954">
-                    <conditions>
-                        <condition id="-14" name="Compare variable" sid="737093610340895" type="System">
-                            <param id="0" name="Variable">bubbleCount</param>
-                            <param id="1" name="Comparison">5</param>
-                            <param id="2" name="Value">bubbleTotal-1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-16" name="Set opacity" sid="181520012133749" type="portal">
-                            <param id="0" name="Opacity">100</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="860510675774416">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="465011418789570" type="Player">

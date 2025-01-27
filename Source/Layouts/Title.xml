@@ -593,7 +593,7 @@
                     <properties>
                         <text>© 2025</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Narrow,-35,400,0</font>
+                        <font>Arial,-35,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Right</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
