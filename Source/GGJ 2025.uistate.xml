@@ -9,20 +9,7 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         </active>
         <display name="HTML5" />
     </configurations>
-    <open-tabs>
-        <layout active="1" order="0">Object Repository</layout>
-        <layout order="2">Intro</layout>
-        <layout order="4">Title</layout>
-        <layout order="6">06</layout>
-        <layout order="7">01</layout>
-        <layout order="8">04</layout>
-        <layout order="9">03</layout>
-        <layout order="10">End</layout>
-        <event-sheet order="1">E_Intro</event-sheet>
-        <event-sheet order="3">E_Title</event-sheet>
-        <event-sheet order="5">E_Level_Base</event-sheet>
-        <event-sheet order="11">E_End</event-sheet>
-    </open-tabs>
+    <open-tabs />
     <properties>
         <property expanded="1" name="About" />
         <property expanded="1" name="Project settings" />
@@ -39,7 +26,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="music-folder/" />
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/bubble/" />
-        <folder expanded="1" path="animation-folder/gradient/" />
         <folder expanded="1" path="animation-folder/Enemy/" />
         <folder expanded="1" path="animation-folder/GGJ_logo/" />
         <folder expanded="1" path="animation-folder/roman_rios/" />
@@ -47,7 +33,6 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="1" path="animation-folder/Black/" />
         <folder expanded="1" path="animation-folder/Player/" />
         <folder expanded="1" path="animation-folder/TitleLogo/" />
-        <folder expanded="1" path="animation-folder/Designer/" />
         <folder expanded="1" path="animation-folder/portal/" />
         <folder expanded="1" path="animation-folder/abstractgradientneonlights_/" />
         <folder expanded="1" path="animation-folder/TouchArea/" />

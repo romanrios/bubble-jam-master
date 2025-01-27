@@ -1,5 +1,5 @@
 ﻿{
-	"version": 1737938896,
+	"version": 1737980823,
 	"fileList": [
 		"data.js",
 		"c2runtime.js",
@@ -7,7 +7,6 @@
 		"offlineClient.js",
 		"images/bubble-sheet0.png",
 		"images/particles.png",
-		"images/gradient-sheet0.png",
 		"images/cuadricula.png",
 		"images/enemy-sheet0.png",
 		"images/enemy-sheet1.png",
@@ -18,7 +17,6 @@
 		"images/player-sheet0.png",
 		"images/titlelogo-sheet0.png",
 		"images/9patch.png",
-		"images/designer-sheet0.png",
 		"images/portal-sheet0.png",
 		"images/particles2.png",
 		"images/abstractgradientneonlights_-sheet0.png",

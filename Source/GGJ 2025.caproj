@@ -109,30 +109,6 @@
         <object-type name="Function" sid="137150105584596">
             <plugin id="Function" />
         </object-type>
-        <object-type name="gradient" sid="383441437146758">
-            <plugin id="Sprite" />
-            <behaviors>
-                <behavior-type name="Bullet" sid="515255578731339">
-                    <behavior id="Bullet" />
-                </behavior-type>
-            </behaviors>
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="978312465401550" speed="5">
-                    <frame duration="1" hotspotX="0.50079" hotspotY="0.500565" original-source="C:\Users\Usuario\Desktop\gradient.png">
-                        <collision-poly>
-                            <point x="0.311216" y="0.222599" />
-                            <point x="0.49921" y="0.148023" />
-                            <point x="0.668246" y="0.237288" />
-                            <point x="0.71406" y="0.499435" />
-                            <point x="0.665087" y="0.760452" />
-                            <point x="0.49921" y="0.823729" />
-                            <point x="0.338073" y="0.758192" />
-                            <point x="0.262243" y="0.499435" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="Cuadricula" sid="932966802202240">
             <plugin id="TiledBg" />
             <behaviors>
@@ -446,14 +422,6 @@
                 </behavior-type>
             </behaviors>
             <texture original-source="C:\Users\Usuario\Desktop\GGJ2025\recursos\9patch.png" />
-        </object-type>
-        <object-type name="Designer" sid="116944643346056">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="199665395792419" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Usuario\Desktop\Designer.jpeg" />
-                </animation>
-            </animation-folder>
         </object-type>
         <object-type name="portal" sid="919057869123911">
             <plugin id="Sprite" />
