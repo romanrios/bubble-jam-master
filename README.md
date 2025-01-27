@@ -1,4 +1,14 @@
 # Bubble Jam Master 
+Global Game Jam 2025 Game | Theme: "Bubble"
+
+![d](https://romanrios.github.io/bubble-jam-master/press/logo_transparent.png)
+
+![d](https://romanrios.github.io/bubble-jam-master/press/screenshot_01.png)
+
+![d](https://romanrios.github.io/bubble-jam-master/press/screenshot_02.png)
+
+![d](https://romanrios.github.io/bubble-jam-master/press/screenshot_03.png)
+
 
 ## English:
 
@@ -8,7 +18,7 @@ Mobile-friendly: Play with just one finger.
 
 Credits: Design, programming and music by Román Ríos.
 
-Global Game Jam 2025 Game | Theme: "Bubble"
+
 
 ---
 
@@ -20,4 +30,4 @@ Amigable para móviles: Juega con un solo dedo.
 
 Créditos: Diseño, programación y música por Román Ríos.
 
-Juego para la Global Game Jam 2025 | Tema: "Burbujas"
+
