@@ -1,11 +1,17 @@
 Email:
 romanrios@live.com
 
-Website:
-https://romanrios.github.io
-
 LinkedIn:
 https://www.linkedin.com/in/romanrios
 
+Website:
+https://romanrios.github.io
+
 Itch.io:
-https://romanrios.itch.io/
+https://romanrios.itch.io
+
+GitHub:
+https:/github.com/romanrios
+
+
+
