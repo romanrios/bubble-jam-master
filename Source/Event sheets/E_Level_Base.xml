@@ -70,7 +70,7 @@
                         <action id="0" name="Play" sid="779566819327698" type="Audio">
                             <param id="0" name="Audio file">ggj2025</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">10</param>
+                            <param id="3" name="Volume">13</param>
                             <param id="1" name="Tag (optional)">&quot;music&quot;</param>
                         </action>
                     </actions>
@@ -214,7 +214,7 @@
                 </action>
                 <action id="0" name="Call function" sid="284507793471016" type="Function">
                     <param id="0" name="Name">&quot;playRandomSoundBubble&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
+                    <param id="1" name="Parameter {n}">-9</param>
                 </action>
             </actions>
             <sub-events>
@@ -244,8 +244,11 @@
                 </condition>
             </conditions>
             <actions>
-                <action behavior="Rotate" id="0" name="Set speed" sid="548617923907820" type="Player">
-                    <param id="0" name="Speed">rotationSpeed</param>
+                <action behavior="Rotate" id="0" name="Set speed" sid="128401263969417" type="Player">
+                    <param id="0" name="Speed">0</param>
+                </action>
+                <action id="-8" name="Set angle" sid="177838528127327" type="Player">
+                    <param id="0" name="Angle">Player.Bullet.AngleOfMotion</param>
                 </action>
                 <action id="-10" name="Set value" sid="459786768868675" type="Player">
                     <param id="0" name="Instance variable">state</param>
@@ -254,6 +257,12 @@
                 <action id="4" name="Set animation" sid="267496536353128" type="Player">
                     <param id="0" name="Animation">&quot;Default&quot;</param>
                     <param id="1" name="From">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="867628650343124" type="System">
+                    <param id="0" name="Seconds">0.3</param>
+                </action>
+                <action behavior="Rotate" id="0" name="Set speed" sid="548617923907820" type="Player">
+                    <param id="0" name="Speed">rotationSpeed</param>
                 </action>
             </actions>
         </event-block>
@@ -303,7 +312,7 @@
                 </action>
                 <action id="0" name="Call function" sid="510291968953762" type="Function">
                     <param id="0" name="Name">&quot;playRandomSoundBubble&quot;</param>
-                    <param id="1" name="Parameter {n}"></param>
+                    <param id="1" name="Parameter {n}">-6</param>
                 </action>
             </actions>
             <sub-events>
@@ -458,7 +467,7 @@
                     <param id="0" name="Folder">0</param>
                     <param id="1" name="Audio file name">choose(&quot;bub01&quot;,&quot;bub02&quot;)</param>
                     <param id="3" name="Loop">0</param>
-                    <param id="4" name="Volume">-6</param>
+                    <param id="4" name="Volume">Function.Param(0)</param>
                     <param id="2" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>

@@ -593,7 +593,7 @@
                     <properties>
                         <text>© 2025</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-35,400,0</font>
+                        <font>Arial,-32,400,0</font>
                         <color>255,255,255</color>
                         <horizontal-alignment>Right</horizontal-alignment>
                         <vertical-alignment>Center</vertical-alignment>
@@ -619,7 +619,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>534</x>
-                        <y>663</y>
+                        <y>662</y>
                         <z>0</z>
                         <width>154</width>
                         <height>71</height>

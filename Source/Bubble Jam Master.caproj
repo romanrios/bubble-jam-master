@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2project>
-    <name>GGJ 2025</name>
-    <description>GGJ 2025</description>
-    <version>1.0.0.0</version>
+    <name>Bubble Jam Master</name>
+    <description>Global Game Jam 2025 Game</description>
+    <version>2025.02.02</version>
     <author>Román Ríos</author>
     <author-email>romanrios@live.com</author-email>
     <author-website>http://romanrios.github.io/</author-website>
-    <app-id>com.ggj2025.myapp</app-id>
+    <app-id>com.bubble-jam-master.myapp</app-id>
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>28000</saved-with-version>
     <used-plugins>
@@ -421,7 +421,7 @@
                     <behavior id="Sin" />
                 </behavior-type>
             </behaviors>
-            <texture original-source="C:\Users\Usuario\Desktop\GGJ2025\recursos\9patch.png" />
+            <texture original-source="C:\Users\Usuario\Desktop\Roman Diseño\Estudio\GGJ2025\recursos\9patch_2.png" />
         </object-type>
         <object-type name="portal" sid="919057869123911">
             <plugin id="Sprite" />

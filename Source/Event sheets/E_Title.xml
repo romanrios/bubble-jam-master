@@ -33,7 +33,7 @@
                 <action id="0" name="Play" sid="489552684682829" type="Audio">
                     <param id="0" name="Audio file">VOICE_bubble_jam_master</param>
                     <param id="2" name="Loop">0</param>
-                    <param id="3" name="Volume">0</param>
+                    <param id="3" name="Volume">-5</param>
                     <param id="1" name="Tag (optional)">&quot;sfx&quot;</param>
                 </action>
             </actions>
@@ -58,7 +58,7 @@
                         <action id="0" name="Play" sid="785822485301032" type="Audio">
                             <param id="0" name="Audio file">ggj2025</param>
                             <param id="2" name="Loop">1</param>
-                            <param id="3" name="Volume">10</param>
+                            <param id="3" name="Volume">13</param>
                             <param id="1" name="Tag (optional)">&quot;music&quot;</param>
                         </action>
                     </actions>
